@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+   
+    <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin><link href="https://fonts.googleapis.com/css2?family=Inter:wght@300&display=swap" rel="stylesheet">
+
+   <title>Challenge01 | Decodificador</title>
+</head>
+<body>
+    <header>
+        <img src="./assets/img/logo-decodificador.png" alt="Logo Alura">
+    </header>
+    <main class="container">
+        <div class="container_direito">
+            <textarea placeholder="Digite seu texto" class="mensagem_usuario" onkeyup="return forceLower(this)" rows="10" cols="24"></textarea>
+            <div class="informacao_usuario">
+                <img class="vetor" src="./assets/img/exclamacao-vetor.png" alt="ponto de exclamação">
+                <p>Apenas letras minúsculas e sem acento.</p>
+            </div>
+            <div class="buttons">
+                <button class="btn_criptografar" value="criptografar">Criptografar</button>
+                <button class="btn_descriptografar" value="descriptografar">Descriptografar</button>
+            </div>
+        </div>
+        <div class="container_esquerdo">
+            <div class="informacao">
+                <img class="img_esquerda" src="./assets/img/High quality products 1 1.svg" alt="pessoa observando um cristal com uma lupa.">
+                <h3 class="info_esquerda">Nenhuma mensagem encontrada</h3>
+                <h5 class="info_esquerda">Digite um texto no campo ao lado que você deseje criptografar ou descriptografar.</h5>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <p>Desenvolvido por Alexania Toma com &#10084</p>
+    </footer>
+
+    <script src="main.js" defer></script>
+    
+</body>
+</html>

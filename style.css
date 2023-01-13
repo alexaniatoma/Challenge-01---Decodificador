@@ -1,0 +1,187 @@
+body {
+    background-color: #E5E5E5;
+    box-sizing: border-box;
+    color:#0A3871;
+    font-family: 'Inter', sans-serif;
+
+}
+
+header{
+    margin-top:2em;
+    margin-left:2em;
+
+}
+
+.container {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.container_direito {
+    margin-left: 5em;
+    width: 80%;
+
+}
+
+.mensagem_usuario {
+    background-color: transparent;
+    border:none;
+    color:#0A3871;
+    font-size: 1.5em;
+    padding: 10px;
+    margin-top: 4em;
+    resize:vertical;
+
+}
+
+.campo_mensagem, .mensagem_usuario:focus{
+    outline: none;
+
+}
+
+.vetor {
+    margin-right: 3px;
+    width: 10px;
+
+}
+
+.informacao_usuario {
+    align-items: center;
+    display: flex;
+    font-size: 0.7em;
+    flex-direction: row;
+    margin-top:23em;
+
+}
+
+.buttons {
+    display: flex;
+    flex-direction: row;
+    margin-top:1em;
+    
+}
+
+.btn_criptografar, .btn_descriptografar {
+    background-color: #0A3871;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    color: #fff;
+    font-size: 1em;
+    margin-right: 1em;
+    padding: 15px;
+    width: 50%;
+
+}
+
+.btn_descriptografar {
+    background-color:transparent;
+    color:#0A3871;
+
+}
+
+.btn_copiar, .btn_limpar {
+    background-color: transparent;
+    border: 1px solid #0A3871;
+    border-radius: 24px;
+    cursor: pointer;
+    color:#0A3871;
+    font-size: 1em;
+    margin-top:auto;
+    padding: 1em;
+    width: 80%;
+
+}
+
+.btn_limpar {
+    margin: 1em;
+
+}
+
+.container_esquerdo {
+    align-items: center;
+    background-color: #fff;
+    border-radius: 32px;
+    box-shadow: 0px 24px 32px -8px rgba(0, 0, 0, 0.08);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 7em 0;
+    margin: 0 1.5em;
+    
+}
+
+.img_esquerda {
+    width: 60%;
+
+}
+
+h3 {
+    font-size: 1.3em;
+    text-align: center;
+    font-weight: bold;
+    margin:0.7em 0.5em;
+    
+}
+
+h5 {
+    font-size: .7em;
+    text-align: center;
+    margin:0 0.5em;
+
+}
+
+.campo_mensagem {
+    border:none;
+    color:#0A3871;
+    font-size: 1.5em;
+    resize:none;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 1.5em;
+    height: 30%;
+
+}
+
+ .mensagem_usuario::-webkit-scrollbar, .campo_mensagem::-webkit-scrollbar {
+    display: none;
+
+}
+
+footer {
+    background-color: #0A3871;
+    color:#E5E5E5;
+    margin-top:2em;
+    padding: 1em;
+    text-align: center;
+    
+}
+
+@media screen and (max-width: 480px) {
+    .container, .container_direito, .buttons {
+        flex-direction: column;
+        justify-content: center;
+
+    }
+
+    .container_direito, .container_esquerdo .img_esquerda, .btn_criptografar, .btn_descriptografar{
+        width: auto;
+    }
+
+    .container_direito {
+        margin:auto;
+    }
+
+    .btn_criptografar {
+        margin-bottom: .5em;;
+    }
+
+    .container_esquerdo {
+        margin-top: 1em;
+    }
+    
+}
+
+
